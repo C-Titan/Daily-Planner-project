@@ -1,0 +1,269 @@
+
+/* GLOBAL STYLES */
+
+  :root {
+    /* Fonts */
+      --font-family: sans-serif;
+      --font-size-mcro: 10px;
+      --font-size-mini: 14px;
+      --font-size     : 16px;
+      --font-size-maxi: 20px;
+      --font-size-mega: 24px;
+      --font-size-h1: 50px;
+      --font-size-h2: 30px;
+
+    /* UI */
+      --border-radius-mini: 1em;
+      --border-radius:      2em;
+      --border-radius-maxi: 3em;
+
+      --edge-gap-mcro: 0.5rem;
+      --edge-gap-mini: 1rem;
+      --edge-gap:      3rem;
+      --edge-gap-maxi: 5rem;
+      --edge-gap-mega: 7rem;
+
+      --z-index-main: 10;
+      --z-index-header: 20;
+      --z-index-footer: 90;
+      --z-index-hover: 1000;
+    
+    /* VFX */
+      --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      --box-shadow-card: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      --box-shadow-buttons: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  }
+
+/* Formatting */
+
+  /* ========= Themes ========= */
+    [data-theme="brown-dark"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(30, 20%, 21%);
+      --color-bg-accent: hsla(30, 25%, 39%, 0.361);
+      --color-header-bg: hsl(15, 14%, 11%);
+      --color-footer-bg: hsl(60, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(24, 77%, 51%);
+      --color-button-accent: hsl(22, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 100%);
+      --color-normal-text: hsl(0, 0%, 100%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(30, 20%, 21%);
+    }
+    
+    [data-theme="brown-light"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(48, 100%, 83%);
+      --color-bg-accent: hsla(48, 26%, 55%, 0.361);
+      --color-header-bg: hsl(32, 100%, 74%);
+      --color-footer-bg: hsl(60, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(24, 77%, 51%);
+      --color-button-accent: hsl(22, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 0%);
+      --color-normal-text: hsl(0, 0%, 0%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(29, 100%, 92%);
+    }
+    
+    [data-theme="blue-dark"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(214, 20%, 21%);
+      --color-bg-accent: hsla(214, 25%, 39%, 0.361);
+      --color-header-bg: hsl(214, 14%, 11%);
+      --color-footer-bg: hsl(214, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(214, 77%, 51%);
+      --color-button-accent: hsl(200, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 100%);
+      --color-normal-text: hsl(0, 0%, 100%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(214, 20%, 21%);
+    }
+    
+    [data-theme="blue-light"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(214, 100%, 83%);
+      --color-bg-accent: hsla(214, 26%, 55%, 0.361);
+      --color-header-bg: hsl(210, 100%, 98%);
+      --color-footer-bg: hsl(214, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(214, 77%, 51%);
+      --color-button-accent: hsl(200, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 0%);
+      --color-normal-text: hsl(0, 0%, 0%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(214, 100%, 92%);
+    }
+    
+    [data-theme="red-dark"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(0, 20%, 21%);
+      --color-bg-accent: hsla(0, 25%, 39%, 0.361);
+      --color-header-bg: hsl(0, 14%, 11%);
+      --color-footer-bg: hsl(0, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(0, 77%, 51%);
+      --color-button-accent: hsl(4, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 100%);
+      --color-normal-text: hsl(0, 0%, 100%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(346, 20%, 21%);
+    }
+    
+    [data-theme="red-light"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(0, 100%, 83%);
+      --color-bg-accent: hsla(0, 26%, 55%, 0.361);
+      --color-header-bg: hsl(0, 100%, 98%);
+      --color-footer-bg: hsl(255, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(0, 77%, 51%);
+      --color-button-accent: hsl(14, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 0%);
+      --color-normal-text: hsl(0, 0%, 0%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(352, 69%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.5);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(0, 100%, 92%);
+    }
+    
+    [data-theme="green-dark"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(120, 20%, 21%);
+      --color-bg-accent: hsla(120, 25%, 39%, 0.361);
+      --color-header-bg: hsl(120, 14%, 11%);
+      --color-footer-bg: hsl(0, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(120, 77%, 51%);
+      --color-button-accent: hsl(150, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 100%);
+      --color-normal-text: hsl(0, 0%, 100%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(100, 20%, 21%);
+    }
+    
+    [data-theme="green-light"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(120, 100%, 83%);
+      --color-bg-accent: hsla(120, 26%, 55%, 0.361);
+      --color-header-bg: hsl(120, 100%, 98%);
+      --color-footer-bg: hsl(255, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(120, 77%, 51%);
+      --color-button-accent: hsl(150, 93%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 0%);
+      --color-normal-text: hsl(0, 0%, 0%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(352, 69%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.5);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(100, 100%, 92%);
+    }
+    
+    [data-theme="grey-dark"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(0, 0%, 21%);
+      --color-bg-accent: hsla(0, 0%, 39%, 0.361);
+      --color-header-bg: hsl(0, 0%, 11%);
+      --color-footer-bg: hsl(0, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(0, 0%, 51%);
+      --color-button-accent: hsl(0, 0%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 100%);
+      --color-normal-text: hsl(0, 0%, 100%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(298, 70%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.486);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(0, 0%, 21%);
+    }
+    
+    [data-theme="grey-light"] {
+      /* Header/Footer Backgrounds */
+      --color-bg: hsl(0, 0%, 83%);
+      --color-bg-accent: hsla(0, 0%, 55%, 0.361);
+      --color-header-bg: hsl(0, 0%, 98%);
+      --color-footer-bg: hsl(255, 2%, 8%);
+      
+      /* Buttons */
+      --color-button-bg: hsl(0, 0%, 51%);
+      --color-button-accent: hsl(0, 0%, 61%);
+      
+      /* Text */
+      --color-heading-text: hsl(0, 0%, 0%);
+      --color-normal-text: hsl(0, 0%, 0%);
+      --color-normal-text-dark: hsl(0, 0%, 100%);
+      --color-button-text: hsl(0, 0%, 100%);
+      --color-links: hsl(352, 69%, 77%);
+      --color-links-grey: hsla(0, 0%, 84%, 0.5);
+
+      /* Menus */
+      --color-dropdown-menu: hsl(0, 0%, 92%);
+    }
+    
