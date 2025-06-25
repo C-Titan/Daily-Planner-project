@@ -9,7 +9,7 @@
         margin: 0rem;
         z-index: 0; }
 
-    #main-body { z-index: var(--z-index-main); }
+    .main-body { z-index: var(--z-index-main); }
 
     
 /* ========= HERO SECTION ========= */
@@ -47,46 +47,46 @@
             margin-top: 3rem; 
             margin-bottom: 2rem; }
 
-        #user-buttons { margin: 1rem; }
-        #user-buttons button { 
-            font-size: var(--font-size);
-            margin: 1rem;
-            border-radius: 10px;
-            padding-left: 20px;
-            padding-right: 20px; }
-        #get-started {
-            border-radius: 15px;
-            padding: 15px;
-            padding-left:  25px;
-            padding-right: 25px; }
-        
-        #showcase-video {     
-            background: var(--color-bg);    
-            box-shadow: var(--box-shadow-buttons);
-            border-radius: var(--border-radius-mini);
-            padding: 0.25rem;
-            margin: var(--edge-gap); 
-            transition: 0.4s ease; }
-        #showcase-video:hover { transform: scale(1.1); }
-        #showcase-video figure, video {
-            border-radius: var(--border-radius-mini);
-            width: 40rem;
-            height: 25rem; }
+            #user-buttons { margin: 1rem; }
+            #user-buttons button { 
+                font-size: var(--font-size);
+                margin: 1rem;
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-right: 20px; }
+            .get-started {
+                border-radius: 15px;
+                padding: 15px;
+                padding-left:  25px;
+                padding-right: 25px; }
+            
+            #showcase-video {     
+                background: var(--color-bg);    
+                box-shadow: var(--box-shadow-buttons);
+                border-radius: var(--border-radius-mini);
+                padding: 0.25rem;
+                margin: var(--edge-gap); 
+                transition: 0.4s ease; }
+            #showcase-video:hover { transform: scale(1.1); }
+            #showcase-video figure, video {
+                border-radius: var(--border-radius-mini);
+                width: 40rem;
+                height: 25rem; }
 
-        #partners { 
-            display: flex;
-            margin: 1rem; }
-        #partners ul { 
-            display: flex;
-            justify-items: center;
-            margin: 2rem;
-            gap: 2rem; }
-        #partners ul > * { transition: 0.4s ease;} 
-        #partners ul > *:hover { transform: scale(1.5);} 
-        #partners .media-container, #partners image { 
-            border-radius: 3rem;
-            width:  150px;
-            height:  50px; }
+            #partners { 
+                display: flex;
+                margin: 1rem; }
+            #partners ul { 
+                display: flex;
+                justify-items: center;
+                margin: 2rem;
+                gap: 2rem; }
+            #partners ul > * { transition: 0.4s ease;} 
+            #partners ul > *:hover { transform: scale(1.5);} 
+            #partners .media-container, #partners image { 
+                border-radius: 3rem;
+                width:  150px;
+                height:  50px; }
 
             
     .descriptors {
@@ -223,3 +223,25 @@
             .reviews #scroll-buttons #left { 
                 border-top-right-radius: 60%; 
                 border-bottom-right-radius: 60%; }
+
+    .want-to-learn-more {
+        background: linear-gradient(180deg, var(--color-bg), var(--color-header-bg));
+        /* box-shadow: var(--box-shadow-buttons); */
+        /* box-shadow: 0px -4px 20px -16px #000000ff; */
+        
+        border-radius: var(--border-radius);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        margin: var(--edge-gap-mini);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding:  0rem;
+        padding-top: var(--edge-gap);
+        padding-bottom: var(--edge-gap-mega); }
+        
+        .want-to-learn-more .get-started { padding: 20px; }

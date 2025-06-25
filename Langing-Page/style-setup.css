@@ -85,10 +85,6 @@
 
 
 /* ========= MEDIA ========= */
-  .placeholder-container {
-    border: 2px dashed #717171;
-    /* background: #717171; */ }
-  
   .media-container {
     border-radius: var(--border-radius-mini); 
     width: 200px;
@@ -97,4 +93,7 @@
     align-items: center; 
     justify-content: center; }
 
+  .placeholder-container {
+    border: 2px dashed #717171;
+    /* background: #717171; */ }
     
