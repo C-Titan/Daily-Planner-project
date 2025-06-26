@@ -1,99 +1,118 @@
-/* CSS RESET */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
+/*#region ========= CSS RESET ========= */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
-  html {
-    height: auto;
-    scroll-behavior: smooth;
-    font-size: var(--font-size); }
-    
-    
-  /* BODY */
-  body {
-    height: auto;
-    background-color: var(--color-footer-bg);
-    
-    font-family: var(--font-family);
-    /* font-family:; */
-    color: var(--color-normal-text);
+	transition: 0.2s ease;
+}
 
-    line-height: 1.4;
-    
-    padding: 0rem;
-    margin: 0rem; }
+html {
+	height: auto;
+	scroll-behavior: smooth;
+	font-size: var(--font-size);
+}
+	
+	
+/* BODY */
+body {
+	height: auto;
+	background-color: var(--color-footer-bg);
+	
+	font-family: var(--font-family);
+	/* font-family:; */
+	color: var(--color-normal-text);
 
-
-/* ========= LINKS ========= */
-  a { color: var(--color-normal-text); }
-  a:hover { color: var(--color-links); }
-
-
-/* ========= LISTS ========= */
-  ul { list-style: none; }
-  
-  .scrollable-v, .scrollable-h {
-    scroll-behavior: smooth;
-    min-height: auto;
-    min-width: auto;
-    display: flex;
-    justify-items: center;
-    align-items: center; }
-  .scrollable-v {
-    flex-direction: column;
-    overflow-y: auto;
-    max-height: 105%; }
-  .scrollable-h {
-    flex-direction: row;
-    overflow-x: auto;
-    max-width: 105%; }
-  
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none; }
-  .hide-scrollbar::-webkit-scrollbar { display: none; }
+	line-height: 1.4;
+	
+	padding: 0rem;
+	margin: 0rem;
+}
+/*#endregion*/
 
 
+/*#region ========= LINKS ========= */
+a { color: var(--color-normal-text); }
+a:hover { color: var(--color-links); }
+/*#endregion*/
 
-/* ========= BUTTONS ========= */
-  button {
-    background-color: var(--color-button-bg);
-    color: var(--color-button-text);
-    font-weight: bold;
 
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    
-    cursor: pointer;
-    
-    transition: 0.3s ease; }
-  button:hover {
-    background-color: var(--color-button-accent);
-    box-shadow: var(--box-shadow-buttons);
-    transform: scale(1.1); }
-  
-  .no-bg-button { 
-    color: var(--color-button-bg);
-    background: none; }
-  .no-bg-button:hover {
-    background: none;
-    color: var(--color-links); }
-  .no-bg-button.simple { box-shadow: none; }
+/*#region ========= LISTS ========= */
+ul { list-style: none; }
+
+.scrollable-v, .scrollable-h {
+	scroll-behavior: smooth;
+	min-height: auto;
+	min-width: auto;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+.scrollable-v {
+	flex-direction: column;
+	overflow-y: auto;
+	max-height: 105%;
+}
+.scrollable-h {
+	flex-direction: row;
+	overflow-x: auto;
+	max-width: 105%;
+}
+
+.hide-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+/*#endregion*/
 
 
 
-/* ========= MEDIA ========= */
-  .media-container {
-    border-radius: var(--border-radius-mini); 
-    width: 200px;
-    height: 55px;    
-    display: flex; 
-    align-items: center; 
-    justify-content: center; }
+/*#region ========= BUTTONS ========= */
+button {
+	background-color: var(--color-button-bg);
+	color: var(--color-button-text);
+	font-weight: bold;
 
-  .placeholder-container {
-    border: 2px dashed #717171;
-    /* background: #717171; */ }
-    
+	border: none;
+	border-radius: 10px;
+	padding: 0.5rem 1rem;
+	
+	cursor: pointer;
+	
+	transition: 0.1s ease; }
+button:hover {
+	background-color: var(--color-button-accent);
+	box-shadow: var(--box-shadow-buttons);
+	transform: scale(1.1); }
+button:active { 
+	background-color: var(--color-button-focus); 
+	transform: scale(1); }
+
+.no-bg-button { 
+	color: var(--color-button-bg);
+	background: none; }
+.no-bg-button:hover {
+	background: none;
+	color: var(--color-links); }
+.no-bg-button.simple { box-shadow: none; }
+/*#endregion*/
+
+
+
+/*#region ========= MEDIA ========= */
+.media-container {
+	border-radius: var(--border-radius-mini); 
+	width: 200px;
+	height: 55px;    
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+
+.placeholder-container {
+	border: 2px dashed #717171;
+	/* background: #717171; */
+}
+/*#endregion*/
+		

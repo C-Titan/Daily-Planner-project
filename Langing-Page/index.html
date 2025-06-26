@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 
-<html lang="en-US" data-theme="blue-dark">
+<html lang="en-US" data-theme="red-dark">
     <head>
-        <!-- Metadata and other junk -->
+    <!-- #region Metadata and other junk -->
         <meta charset="UTF-8">
         <meta name="description" content="Site to manage interns efficiently.">
         <meta name="author" content="David Agudosi">
         
         <title>Intern Manager</title>
+    <!-- #endregion -->
         
+    <!-- #region LINKS -->
         <link rel="icon" type="image/x-icon" href="/Images/icon.png">
-        <link rel="stylesheet" href="style-main.css">
-        <link rel="stylesheet" href="style-setup.css">
-        <link rel="stylesheet" href="style-header.css">
-        <link rel="stylesheet" href="style-footer.css">
-        <link rel="stylesheet" href="style-overlay.css">
         <link rel="stylesheet" href="style-variables.css">
+        <link rel="stylesheet" href="style-setup.css">
+        <link rel="stylesheet" href="style-overlay.css">
+        <link rel="stylesheet" href="style-header.css">
+        <link rel="stylesheet" href="style-main.css">
+        <link rel="stylesheet" href="style-footer.css">
+
+        <style id="theme-css-sheet">
+        </style>
+    <!-- #endregion -->
     </head>
 
 
 
     <body>
 
-    <!-- OVERLAY -->
+    <!-- #region OVERLAY -->
         <div id="top-banner">
             <p>This site uses cookies to enhance your experience. <a href="/Langing-Page/index.html">Learn more.</a></p>
             
@@ -33,16 +39,20 @@
         <button id="back-to-top">▲</button>
         
         <!-- Theme Switcher -->
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-            <!-- <span class="slider">&#9728;</span> -->
-            <!-- <img src="sun-icon.png" alt="" /> -->
-        </label>
+         <div>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+                <!-- <span class="slider">&#9728;</span> -->
+                <!-- <img src="sun-icon.png" alt="" /> -->
+            </label>
+            <button id="theme-color-switcher"></button>
+        </div>
+    <!-- #endregion -->
     
 
 
-    <!-- HEADER -->
+    <!-- #region HEADER -->
         <header>
             <nav> <!-- Navigation -->
                 <div> <!-- Heading 1 -->
@@ -78,10 +88,11 @@
                 </div>
             </nav>
         </header>
+    <!-- #endregion -->
 
 
 
-    <!-- BODY -->
+    <!-- #region BODY -->
         <main>
             <div class="main-body">
 
@@ -362,10 +373,11 @@
 
             </div>
         </main>
+    <!-- #endregion -->
 
 
 
-    <!-- FOOTER -->
+    <!-- #region FOOTER -->
         <footer>
             <!-- Legal Jargons -->
             <div id="footer-links">
@@ -458,6 +470,9 @@
                 </div>
             </div>
         </footer>
+    <!-- #endregion -->
 
+        
+        <script src="script.js"></script>
     </body>
 </html>
