@@ -1,38 +1,36 @@
 
 /* GLOBAL STYLES */
 
-  :root {
-    /* Fonts */
-      --font-family: sans-serif;
-      --font-size-mcro: 10px;
-      --font-size-mini: 14px;
-      --font-size     : 16px;
-      --font-size-maxi: 20px;
-      --font-size-mega: 24px;
-      --font-size-h1: 50px;
-      --font-size-h2: 30px;
+:root {
+	/* Fonts */
+		--font-family: sans-serif;
+		--font-size-mcro: 10px;
+		--font-size-mini: 14px;
+		--font-size     : 16px;
+		--font-size-maxi: 20px;
+		--font-size-mega: 24px;
+		--font-size-h1: 50px;
+		--font-size-h2: 30px;
 
-    /* UI */
-      /* --theme-color: "blue"; */
-      --border-radius-mini: 1em;
-      --border-radius:      2em;
-      --border-radius-maxi: 3em;
+	/* UI */
+		/* --theme-color: "blue"; */
+		--border-radius-mini: 1em;
+		--border-radius:      2em;
+		--border-radius-maxi: 3em;
 
-      --edge-gap-mcro: 0.5rem;
-      --edge-gap-mini: 1rem;
-      --edge-gap:      3rem;
-      --edge-gap-maxi: 5rem;
-      --edge-gap-mega: 7rem;
+		--edge-gap-mcro: 0.5rem;
+		--edge-gap-mini: 1rem;
+		--edge-gap:      3rem;
+		--edge-gap-maxi: 5rem;
+		--edge-gap-mega: 7rem;
 
-      --z-index-main: 10;
-      --z-index-header: 20;
-      --z-index-footer: 90;
-      --z-index-hover: 1000;
-    
-    /* VFX */
-      --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-      --box-shadow-card: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      --box-shadow-buttons: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-  }
-
-/* Formatting */
+		--z-index-main: 10;
+		--z-index-header: 20;
+		--z-index-footer: 90;
+		--z-index-hover: 1000;
+	
+	/* VFX */
+		--box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+		--box-shadow-card: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		--box-shadow-buttons: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
