@@ -1,0 +1,29 @@
+
+/* ========= Header ========= */
+	header {
+		background: var(--color-header-bg);
+
+		padding       : var(--edge-gap-max);
+		padding-top   : var(--edge-gap-mcro);
+		padding-bottom: var(--edge-gap-mcro);
+
+		margin: 0rem;
+
+		z-index: var(--z-index-header);
+	}
+
+/* ========= Navigation ========= */
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center; 
+	}
+		
+	.nav-buttons { 
+		color: var(--color-button-bg);
+		display: flex; 
+	}
+		
+	.auth-buttons button { 
+		margin-left: 0.5rem; 
+	}

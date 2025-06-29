@@ -7,20 +7,28 @@
         <meta name="description" content="Site to manage interns efficiently.">
         <meta name="author" content="David Agudosi">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
         <title>Intern Manager</title>
     <!-- #endregion -->
         
     <!-- #region LINKS -->
         <link rel="icon" type="image/x-icon" href="/Images/icon.png">
-        <link rel="stylesheet" href="style-variables.css">
-        <link rel="stylesheet" href="style-setup.css">
-        <link rel="stylesheet" href="style-overlay.css">
-        <link rel="stylesheet" href="style-header.css">
-        <link rel="stylesheet" href="style-main.css">
-        <link rel="stylesheet" href="style-footer.css">
 
-        <style id="theme-css-sheet">
-        </style>
+
+        <link rel="stylesheet" href="/CSS/style-variables.css">
+        <link rel="stylesheet" href="/CSS/style-components.css">
+
+        <link rel="stylesheet" href="/CSS/style-setup.css">
+
+        <link rel="stylesheet" href="/CSS/style-overlay.css">
+        <link rel="stylesheet" href="/CSS/style-header.css">
+        <link rel="stylesheet" href="style-main.css">
+        <link rel="stylesheet" href="/CSS/style-footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+        <style id="theme-css-sheet"></style>
     <!-- #endregion -->
     </head>
 
@@ -30,27 +38,33 @@
 
     <!-- #region OVERLAY -->
         <div id="top-banner">
-            <p>This site uses cookies to enhance your experience. <a href="/Langing-Page/index.html">Learn more.</a></p>
+            <p>This site uses cookies to enhance your experience. <a href="/Misc/coming-soon.html">Learn more.</a></p>
             
-            <button id="close-banner" class="no-bg-button simple">✖</button>
+            <button id="close-top-banner" class="no-bg-button simple">✖</button>
         </div>
 
         <!-- Back to Top Button -->
-        <button id="back-to-top">▲</button>
+        <!-- <button id="back-to-top">▲</button> -->
+        <button id="back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
         
         <!-- Theme Switcher -->
-         <div>
-            <label class="switch">
-                <input type="checkbox" id="theme-toggle">
-                <span class="slider"></span>
-                <!-- <span class="slider">&#9728;</span> -->
-                <!-- <img src="sun-icon.png" alt="" /> -->
-            </label>
+        <div class="toggle-switch" id="theme-switch">
             <button id="theme-color-switcher"></button>
+            <label>
+                <input type="checkbox" id="theme-toggle">
+                <i id="theme-slider" class="toggle-slider fa fa-sun" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <!-- Show on Top BG -->
+        <div class="show-on-top-bg">
+
         </div>
     <!-- #endregion -->
-    
 
+    
 
     <!-- #region HEADER -->
         <header>
@@ -65,7 +79,9 @@
 
                 <div class="nav-buttons"> <!-- Nav Buttons -->
                     <div class="dropdown"> <!-- Products Dropdown -->
-                        <button class="no-bg-button"><span>Products</span> ▾</button>
+                        <a href="/Misc/coming-soon.html">
+                            <button class="no-bg-button"><span>Products</span> ▾</button>
+                        </a>
                         <ul class="dropdown-content header-bg">
                             <li><a href="/Misc/coming-soon.html">Product 1</a></li>
                             <li><a href="/Misc/coming-soon.html">Product 2</a></li>
@@ -77,20 +93,30 @@
                     </div>
 
                     <!-- Other buttons -->
-                    <button class="no-bg-button">Resources</button>
-                    <button class="no-bg-button">Pricing</button>
-                    <button class="no-bg-button">Category</button>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Resources</button>
+                    </a>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Category</button>
+                    </a>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Pricing</button>
+                    </a>
                 </div>
-
+                
                 <div class="auth-buttons"> <!-- Authentication Buttons -->
-                    <button class="no-bg-button">Sign In</button>
-                    <button>Get Started</button>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Sign In</button>
+                    </a>
+                    <a href="/Misc/coming-soon.html">
+                        <button>Get Started</button>
+                    </a>
                 </div>
             </nav>
         </header>
     <!-- #endregion -->
 
-
+ 
 
     <!-- #region BODY -->
         <main>
@@ -98,7 +124,8 @@
 
                 <section class="hero"> <!-- Hero Section -->
                     <div class="heading"> <!-- Heading -->
-                        <h1>The easiest way to manage your interns</h1>
+                        <h1>The easiest way to manage your tasks</h1>
+
                         <p>Give your greatest asset the tools to connect, engage and communicate with your admins.</p>
                     </div>
                 
@@ -108,44 +135,43 @@
                     </div>
 
                     <div id="showcase-video">
-                        <figure class="media-container placeholder-container">
-                            <video controls autoplay muted loop>
-                                <source src="videos/my-video.mp4" type="video/mp4">
-                            </video> 
+                        <figure class="media-container">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/cWppAbqm9I8" title="&quot;Your Idol&quot; | Official Song Clip | KPop Demon Hunters | Sony Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            sandbox="allow-same-origin allow-scripts"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </figure>
                     </div>
 
                     <div id="partners">
                         <ul>
                             <li><a href="index.html"> <!-- Replace link to company site -->
-                                <figure class="media-container placeholder-container">
-                                    <img src="/Images/partner-logo.png" alt="Partner Logo">
+                                <figure class="media-container">
+                                    <img src="/Images/company 01.png" alt="Partner Logo">
                                 </figure>
                             </a></li>
                             <li><a href="index.html"> <!-- Replace link to company site -->
-                                <figure class="media-container placeholder-container">
-                                    <img src="/Images/partner-logo.png" alt="Partner Logo">
+                                <figure class="media-container">
+                                    <img src="/Images/company 02.png" alt="Partner Logo">
                                 </figure>
                             </a></li>
                             <li><a href="index.html"> <!-- Replace link to company site -->
-                                <figure class="media-container placeholder-container">
-                                    <img src="/Images/partner-logo.png" alt="Partner Logo">
+                                <figure class="media-container">
+                                    <img src="/Images/company 03.png" alt="Partner Logo">
                                 </figure>
                             </a></li>
                             <li><a href="index.html"> <!-- Replace link to company site -->
-                                <figure class="media-container placeholder-container">
-                                    <img src="/Images/partner-logo.png" alt="Partner Logo">
+                                <figure class="media-container">
+                                    <img src="/Images/company 04.png" alt="Partner Logo">
                                 </figure>
                             </a></li>
                             <li><a href="index.html"> <!-- Replace link to company site -->
-                                <figure class="media-container placeholder-container">
-                                    <img src="/Images/partner-logo.png" alt="Partner Logo">
+                                <figure class="media-container">
+                                    <img src="/Images/company 05.png" alt="Partner Logo">
                                 </figure>
                             </a></li>
                         </ul>
                     </div>
                 </section>
-
 
                 <div class="descriptors">
                     <section class="description-card">
@@ -154,46 +180,44 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolores quisquam reprehenderit tenetur nam, rerum voluptatum quis voluptas itaque natus ab suscipit facilis quae repudiandae officiis incidunt commodi, necessitatibus cumque.</p>
                             
                             <ul>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
                             </ul>
 
                             <button class="get-started">▶ <span>Try It Out</span></button>
                         </div>
                         
                         <div class="support-img">
-                            <figure class="media-container placeholder-container">
-                                <img src="some-image" alt="Image 1">
+                            <figure class="media-container">
+                                <!-- <img src="/Images/image 01.png" alt="Image 1"> -->
+                                <img src="/Images/busness.png" alt="Image 1">
                             </figure>
                         </div>
                     </section>
 
                     <section class="description-card">
                         <div class="support-img">
-                            <figure class="media-container placeholder-container">
-                                <img src="some-image" alt="Image 1">
+                            <figure class="media-container">
+                                <img src="/Images/image 02.jpg" alt="Image 1">
                             </figure>
                         </div>
                         
@@ -202,30 +226,27 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolores quisquam reprehenderit tenetur nam, rerum voluptatum quis voluptas itaque natus ab suscipit facilis quae repudiandae officiis incidunt commodi, necessitatibus cumque.</p>
                             
                             <ul>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/Misc/coming-soon.html">
-                                        <figure class="media-container placeholder-container">
-                                            <img src="some-icon" alt="Item 1">
-                                        </figure>
-                                        <p><span>Some sample text about sample topic.</span> ▷</p>
-                                    </a>
-                                </li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
+                                <li><a href="/Misc/coming-soon.html">
+                                    <figure class="media-container">
+                                        <!-- <img src="some-icon" alt="Item 1"> -->
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </figure>
+                                    <p><span>Some sample text about sample topic.</span> ▷</p>
+                                </a></li>
                             </ul>
 
                             <button class="get-started">▶ <span>Try It Out</span></button>
@@ -242,8 +263,8 @@
                     <div class="scrollable-h hide-scrollbar">
                         <ul>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -252,8 +273,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -262,8 +283,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -272,8 +293,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -282,8 +303,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -292,8 +313,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -302,8 +323,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -312,8 +333,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -322,8 +343,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -332,8 +353,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -342,8 +363,8 @@
                                 </section>
                             </li>
                             <li>
-                                <figure class="profile-pic media-container placeholder-container">
-                                    <img src="some-image" alt="P">
+                                <figure class="profile-pic media-container">
+                                    <img src="/Images/pfp.png" alt="P">
                                 </figure>
                                 <section class="card-text">
                                     <h3>"</h3>
@@ -381,9 +402,9 @@
         <footer>
             <!-- Legal Jargons -->
             <div id="footer-links">
-                <div id="logo-container"> <!-- Icon -->
+                <div> <!-- Logo -->
                     <a href="index.html">
-                        <img src="/Images/generic-company-logo.png" alt="Company Logo" width="100" height="30">
+                        <img src="/Images/generic-company-logo.png" alt="Company Logo" width="150" height="45">
                     </a>
                 </div>
                 
@@ -436,15 +457,18 @@
                             <img src="icons/flag-en.png" alt="Flag" width="20" height="20">
                             <span class="lang-label">English</span> ▾
                         </button>
-                        <ul class="dropdown-content footer-bg scrollable-v">
+                        <ul id="language-dropdown" class="dropdown-content footer-bg scrollable-v">
                             <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">Arabic</a></li>
                             <li><a href="index.html">French</a></li>
-                            <li><a href="index.html">Italian</a></li>
-                            <li><a href="index.html">Mandarin</a></li>
-                            <li><a href="index.html">Portugese</a></li>
-                            <li><a href="index.html">Spanish</a></li>
-                            <li><a href="index.html">Turkish</a></li>
+                            <li><a href="index.html">Arabic</a></li>
+                            <li><a href="index.html">Manderin</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">English</a></li>
                         </ul>
                     </div>
 
@@ -456,16 +480,16 @@
 
                 <div id="socials">
                     <button class="no-bg-button"> <!-- Facebook -->
-                        <img src="/images/twitter-icon.png" alt="" width="24" height="24">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
                     </button>
                     <button class="no-bg-button"> <!-- Twitter -->
-                        <img src="/images/twitter-icon.png" alt="" width="24" height="24">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
                     </button>
                     <button class="no-bg-button"> <!-- LinkedIn -->
-                        <img src="/images/linkedin-icon.png" alt="" width="24" height="24">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </button>
                     <button class="no-bg-button"> <!-- Instagram -->
-                        <img src="/images/instagram-icon.png" alt="" width="24" height="24">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -473,6 +497,7 @@
     <!-- #endregion -->
 
         
-        <script src="script.js"></script>
+        <script src="/JS/themes.js" defer></script>
+        <script src="/JS/setup.js" defer></script>
     </body>
 </html>

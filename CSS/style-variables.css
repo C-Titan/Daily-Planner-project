@@ -1,0 +1,47 @@
+
+/* GLOBAL STYLES */
+
+:root {
+	/* Fonts */
+		--font-family: sans-serif;
+
+		--font-size-mcro: 10px;
+		--font-size-min : 14px;
+		--font-size     : 16px;
+		--font-size-max : 20px;
+		--font-size-mega: 24px;
+
+		--font-size-h1: 50px;
+		--font-size-h2: 30px;
+
+	/* UI */
+		--border-radius-mcro: 0.5em;
+		--border-radius-min : 1em;
+		--border-radius     : 2em;
+		--border-radius-max : 3em;
+		--border-radius-mega: 5em;
+
+		--edge-gap-mcro: 0.5rem;
+		--edge-gap-min : 1rem;
+		--edge-gap     : 3rem;
+		--edge-gap-max : 5rem;
+		--edge-gap-mega: 7rem;
+
+		--z-index-header : 200;
+		--z-index-main   : 100;
+		--z-index-footer : 900;
+		--z-index-overlay: 1000;
+
+	/* SCREEN SIZES */
+		/*  */
+	
+	/* VFX */
+		--box-shadow        : 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+		--box-shadow-card   : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		--box-shadow-buttons: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+	
+	/* ANIMATIONS */
+		--transition-slow: 0.5s ease;
+		--transition-med : 0.3s ease;
+		--transition-fast: 0.2s ease;
+}

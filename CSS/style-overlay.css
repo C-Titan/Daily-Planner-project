@@ -1,0 +1,81 @@
+
+/*#region TOP BANNERR */
+	#top-banner {
+		display: flex;
+		background-color: var(--color-button-accent);
+		
+		position:fixed;
+		justify-content: space-between;
+		align-items: center;
+		
+		padding: 0rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		color: white;
+		
+		top: 0;
+		width: 100%;
+
+		z-index: 1000;
+	}
+	#top-banner a { 
+		text-decoration: underline;
+		color: white;
+	}
+	#close-banner {
+		font-size: 1.25rem;
+		color: white;
+		cursor: pointer;
+	}
+/*#endregion*/
+
+/*#region BACK TO TOP */
+	#back-to-top {
+		/* display: none; */
+		border-radius: 100%;
+		box-shadow: var(--box-shadow-buttons);
+		font-size: 1.5rem;
+		opacity: 0;
+		
+		padding: 0.5rem 0.9rem;
+		position: fixed;
+		bottom: 5rem;
+		right: 1.5rem;
+
+		z-index: var(--z-index-overlay);		
+		transition: var(--transition-fast);
+	}
+/*#endregion*/
+	
+/*#region THEME TOGGLE */
+	#theme-switch {
+		position: fixed;
+		bottom: 2rem;
+		right: 1.5rem;	
+	}
+	
+	#theme-slider {
+		left : 10px;
+        font-size: 1rem;
+	}
+	
+	#theme-color-switcher {
+		display: inline-block;
+		background-color: var(--color-button-bg);
+		border-radius: 100%;
+		box-shadow: var(--box-shadow);
+		
+		position: fixed;
+		bottom: 2rem;
+		right : 3.5rem;
+		width : 2rem;
+		height: 2rem;
+	}
+/*#endregion*/
+
+/*#region INTERRUPT OVERLAY */
+	.show-on-top-bg {
+		background-color: hsla(0, 0%, 0%, 0.2);
+		display: none;
+	}
+/*#endregion*/

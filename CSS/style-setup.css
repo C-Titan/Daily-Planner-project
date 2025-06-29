@@ -1,0 +1,89 @@
+/*#region ========= CSS RESET ========= */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	transition: var(--transition-fast);
+}
+
+html {
+	height: auto;
+	scroll-behavior: smooth;
+	font-size: var(--font-size);
+	max-width: 5000px;
+}
+	
+body {
+	background-color: var(--color-footer-bg);
+	
+	padding: 0rem;
+	margin: 0rem;
+	height: auto;
+	
+	font-family: var(--font-family);
+	color: var(--color-normal-text);
+
+	line-height: 1.4;
+}
+/*#endregion*/
+
+
+/*#region ========= LINKS ========= */
+a { 
+	color: var(--color-normal-text);
+	text-decoration: none;
+}
+a:hover { 
+	color: var(--color-links); 
+}
+/*#endregion*/
+
+
+/*#region ========= LISTS ========= */
+ul { 
+	list-style: none;
+}
+/*#endregion*/
+
+
+/*#region ========= BUTTONS ========= */
+button {
+	background-color: var(--color-button-bg);
+	border-radius: var(--border-radius-mcro);
+	border: none;
+	
+	font-weight: bold;
+	color: var(--color-button-text);
+	
+	padding: 0.5rem 1rem;
+	
+	cursor: pointer;
+}
+button:hover {
+	background-color: var(--color-button-accent);
+	box-shadow: var(--box-shadow-buttons);
+	transform: scale(1.1);
+}
+button:active { 
+	background-color: var(--color-button-focus); 
+	transform: scale(1);
+}
+
+.no-bg-button { 
+	background: none;
+	color: var(--color-button-bg);
+}
+.no-bg-button:hover {
+	background: none;
+	color: var(--color-links);
+}
+
+.no-bg-button.simple {
+	color: var(--color-links-grey);
+}
+/*#endregion*/
+
+
+/*#region ========= N/A ========= */
+/*#endregion*/
