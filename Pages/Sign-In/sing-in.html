@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en-US" data-theme="green-dark">
+    <head>
+    <!-- #region Metadata and other junk -->
+        <meta charset="UTF-8">
+        <meta name="description" content="sign-in Page">
+        <meta name="author" content="David Agudosi">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Intern Manager</title>
+    <!-- #endregion -->
+        
+    <!-- #region LINKS -->
+        <link rel="icon" type="image/x-icon" href="/Images/icon.png">
+
+
+        <link rel="stylesheet" href="/CSS/style-variables.css">
+        <link rel="stylesheet" href="/CSS/style-components.css">
+
+        <link rel="stylesheet" href="/CSS/style-setup.css">
+
+        <link rel="stylesheet" href="/CSS/style-footer.css">
+        <link rel="stylesheet" href="/CSS/style-header.css">
+        <link rel="stylesheet" href="/CSS/style-overlay.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="/CSS/style-modifiers.css">
+
+
+        <style id="theme-css-sheet"></style>
+    <!-- #endregion -->
+    </head>
+
+    <body>
+
+    <!-- #region OVERLAY -->
+    <div style="width: 100%; height: 100%;">
+        <!-- Show on Top BG -->
+        <div class="show-on-top-bg"></div>
+            <p></p>
+        </div>
+        
+        <!-- Top Banner -->
+        <div id="top-banner">
+            <p>This site uses cookies to enhance your experience. <a href="/Misc/coming-soon.html">Learn more.</a></p>
+            
+            <button id="close-top-banner" class="no-bg-button simple">✖</button>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+        
+        <!-- Theme Switcher -->
+        <div class="toggle-switch" id="theme-switch">
+            <button id="theme-color-switcher"></button>
+            <label>
+                <input type="checkbox" id="theme-toggle" class="invisible-input">
+                <i id="theme-slider" class="toggle-slider fa fa-sun" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <!-- Menu -->
+        <div class="show-hover-menu">
+            <label>
+                <input type="checkbox" id="show-hover-menu-toggle" class="invisible-input">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </div>
+    </div>
+    <!-- #endregion -->
+    
+
+    <!-- #region HEADER -->
+        <header>
+            <nav> <!-- Navigation -->
+                <div class="logo"> <!-- Heading 1 -->
+                    <a href="/Pages/Home/index.html"> <!-- Logo -->
+                        <figure class="media-container">
+                            <img src="/Images/generic-company-logo.png" alt="Intern Manager Logo" width="850px" height="200px">
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="nav-buttons" id="navigation"> <!-- Nav Buttons -->
+                    <div class="dropdown"> <!-- Products Dropdown -->
+                        <a href="/Misc/coming-soon.html">
+                            <button class="no-bg-button"><span>Products</span> ▾</button>
+                        </a>
+                        <ul class="dropdown-content header-bg">
+                            <li><a href="/Misc/coming-soon.html">Product 1</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 2</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 3</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 4</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 5</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 6</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Other buttons -->
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Resources</button>
+                    </a>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Category</button>
+                    </a>
+                    <a href="/Misc/coming-soon.html">
+                        <button class="no-bg-button">Pricing</button>
+                    </a>
+                </div>
+                
+                <div class="auth-buttons"> <!-- Authentication Buttons -->
+                    <a href="/Pages/sign-in/Sing-In.html">
+                        <button class="no-bg-button">Sign In</button>
+                    </a>
+                    <a href="/Pages/sign-in/Sing-In.html">
+                        <button>Get Started</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    <!-- #endregion -->
+
+
+    <!-- #region FOOTER -->
+        <footer>
+            <!-- Legal Jargons -->
+            <div id="footer-links">
+                <div> <!-- Logo -->
+                    <a href="/Pages/Home/index.html">
+                        <img src="/Images/generic-company-logo.png" alt="Company Logo" width="150" height="45">
+                    </a>
+                </div>
+                
+                <div id="links-container">
+                    <div class="link-list"> <!-- Solutions -->
+                        <p>Solutions</p>
+                        <ul>
+                            <li><a href="/Misc/coming-soon.html">Intern Manager</a></li>
+                            <li><a href="/Misc/coming-soon.html">Project Manager</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-list"> <!-- Products -->
+                        <p>Products</p>
+                        <ul>
+                            <li><a href="/Misc/coming-soon.html">Product 1</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 2</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 3</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 4</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 5</a></li>
+                            <li><a href="/Misc/coming-soon.html">Product 6</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-list"> <!-- Company -->
+                        <p>Company</p>
+                        <ul>
+                            <li><a href="/Misc/coming-soon.html">Parent Company</a></li>
+                            <li><a href="/Misc/coming-soon.html">Sibling Companies</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-list"> <!-- Support -->
+                        <p>Support</p>
+                        <ul>
+                            <li><a href="/Misc/coming-soon.html">Contact Us</a></li>
+                            <li><a href="/Misc/coming-soon.html">Partner With Us</a></li>
+                            <li><a href="/Misc/coming-soon.html">Legal</a></li>
+                            <li><a href="/Misc/coming-soon.html">Privacy Policy</a></li>
+                            <li><a href="/Misc/coming-soon.html">Press Release</a></li>
+                            <li><a href="/Misc/coming-soon.html">Terms of Service</a></li>
+                            <li><a href="/Misc/coming-soon.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="other">
+
+                <div id="lang-copywrite">
+                    <div class="dropdown">
+                        <button class="no-bg-button">
+                            <img src="icons/flag-en.png" alt="Flag" width="20" height="20">
+                            <span class="lang-label">English</span> ▾
+                        </button>
+                        <ul id="language-dropdown" class="dropdown-content footer-bg scrollable-v">
+                            <li><a href="/Pages/Home/index.html">English</a></li>
+                            <li><a href="/Pages/Home/index.html">French</a></li>
+                            <li><a href="/Pages/Home/index.html">Arabic</a></li>
+                            <li><a href="/Pages/Home/index.html">Manderin</a></li>
+                        </ul>
+                    </div>
+
+                    
+                    <div id="copywrite">
+                        <p>David Agudosi &copy; Intern Manager 2025</p>
+                    </div>
+                </div>
+
+                <div id="socials">
+                    <button class="no-bg-button"> <!-- Facebook -->
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </button>
+                    <button class="no-bg-button"> <!-- Twitter -->
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </button>
+                    <button class="no-bg-button"> <!-- LinkedIn -->
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </button>
+                    <button class="no-bg-button"> <!-- Instagram -->
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    <!-- #endregion -->
+
+
+        <script src="/JS/themes.js" defer></script>
+        <script src="/JS/setup.js" defer></script>
+    </body>
+</html>

@@ -11,15 +11,16 @@ html {
 	height: auto;
 	scroll-behavior: smooth;
 	font-size: var(--font-size);
-	max-width: 5000px;
 }
-	
+
 body {
 	background-color: var(--color-footer-bg);
 	
 	padding: 0rem;
 	margin: 0rem;
 	height: auto;
+	width: 100vw;
+	overflow-x: hidden;
 	
 	font-family: var(--font-family);
 	color: var(--color-normal-text);
@@ -82,6 +83,16 @@ button:active {
 .no-bg-button.simple {
 	color: var(--color-links-grey);
 }
+/*#endregion*/
+
+
+/*#region ========= FORMATTING ========= */
+	.header-bg {
+        background-color: var(--color-header-bg);
+	}
+	.footer-bg {
+        background-color: var(--color-footer-bg);
+	}
 /*#endregion*/
 
 

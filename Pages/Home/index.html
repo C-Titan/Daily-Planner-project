@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
-<html lang="en-US" data-theme="red-dark">
+<html lang="en-US" data-theme="blue-dark">
     <head>
     <!-- #region Metadata and other junk -->
         <meta charset="UTF-8">
-        <meta name="description" content="Site to manage interns efficiently.">
+        <meta name="description" content="Home Page">
         <meta name="author" content="David Agudosi">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+
         <title>Intern Manager</title>
     <!-- #endregion -->
         
@@ -21,11 +21,16 @@
 
         <link rel="stylesheet" href="/CSS/style-setup.css">
 
-        <link rel="stylesheet" href="/CSS/style-overlay.css">
-        <link rel="stylesheet" href="/CSS/style-header.css">
         <link rel="stylesheet" href="style-main.css">
-        <link rel="stylesheet" href="/CSS/style-footer.css">
+        <link rel="stylesheet" href="/CSS/style-footer.css"         id="footer-layout">
+        <link rel="stylesheet" href="/CSS/style-header.css"         id="header-layout">
+        <link rel="stylesheet" href="/CSS/style-header-mobile.css"  id="header-layout-mobile"  disabled>
+        <link rel="stylesheet" href="/CSS/style-footer-mobile.css"  id="footer-layout-mobile"  disabled>
+        <link rel="stylesheet" href="/CSS/style-overlay.css">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="/CSS/style-modifiers.css">
 
 
         <style id="theme-css-sheet"></style>
@@ -37,6 +42,12 @@
     <body>
 
     <!-- #region OVERLAY -->
+        <!-- Show on Top BG -->
+        <div class="show-on-top-bg"></div>
+            <p></p>
+        </div>
+        
+        <!-- Top Banner -->
         <div id="top-banner">
             <p>This site uses cookies to enhance your experience. <a href="/Misc/coming-soon.html">Learn more.</a></p>
             
@@ -44,8 +55,7 @@
         </div>
 
         <!-- Back to Top Button -->
-        <!-- <button id="back-to-top">▲</button> -->
-        <button id="back-to-top">
+        <button id="back-to-top" class="back-to-top">
             <i class="fa fa-arrow-up" aria-hidden="true"></i>
         </button>
         
@@ -53,26 +63,20 @@
         <div class="toggle-switch" id="theme-switch">
             <button id="theme-color-switcher"></button>
             <label>
-                <input type="checkbox" id="theme-toggle">
+                <input type="checkbox" id="theme-toggle" class="invisible-input">
                 <i id="theme-slider" class="toggle-slider fa fa-sun" aria-hidden="true"></i>
             </label>
         </div>
-
-        <!-- Show on Top BG -->
-        <div class="show-on-top-bg">
-
-        </div>
     <!-- #endregion -->
-
     
 
     <!-- #region HEADER -->
         <header>
             <nav> <!-- Navigation -->
-                <div> <!-- Heading 1 -->
+                <div class="logo"> <!-- Heading 1 -->
                     <a href="index.html"> <!-- Logo -->
-                        <figure class="media-container" style="width:200px; height:55px;">
-                            <img src="/Images/generic-company-logo.png" alt="Intern Manager Logo" width="200" height="55">
+                        <figure class="media-container">
+                            <img src="/Images/generic-company-logo.png" alt="Intern Manager Logo" width="850px" height="200px">
                         </figure>
                     </a>
                 </div>
@@ -105,10 +109,10 @@
                 </div>
                 
                 <div class="auth-buttons"> <!-- Authentication Buttons -->
-                    <a href="/Misc/coming-soon.html">
+                    <a href="/Pages/sign-in/Sing-In.html">
                         <button class="no-bg-button">Sign In</button>
                     </a>
-                    <a href="/Misc/coming-soon.html">
+                    <a href="/Pages/sign-in/Sing-In.html">
                         <button>Get Started</button>
                     </a>
                 </div>
@@ -117,7 +121,6 @@
     <!-- #endregion -->
 
  
-
     <!-- #region BODY -->
         <main>
             <div class="main-body">
@@ -130,15 +133,15 @@
                     </div>
                 
                     <div id="user-buttons">
-                        <button class="get-started">▶ <span>Try It Out</span></button>
+                        <a href="/Pages/sign-in/Sing-In.html">
+                            <button class="get-started">▶ <span>Try It Out</span></button>
+                        </a>
                         <button class="learn-more no-bg-button">▶ <span>Learn More</span></button>
                     </div>
 
                     <div id="showcase-video">
                         <figure class="media-container">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/cWppAbqm9I8" title="&quot;Your Idol&quot; | Official Song Clip | KPop Demon Hunters | Sony Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            sandbox="allow-same-origin allow-scripts"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/rf-efIZI_Dg" title="Gaming on a medical device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </figure>
                     </div>
 
@@ -182,33 +185,31 @@
                             <ul>
                                 <li><a href="/Misc/coming-soon.html">
                                     <figure class="media-container">
-                                        <!-- <img src="some-icon" alt="Item 1"> -->
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
                                     </figure>
                                     <p><span>Some sample text about sample topic.</span> ▷</p>
                                 </a></li>
                                 <li><a href="/Misc/coming-soon.html">
                                     <figure class="media-container">
-                                        <!-- <img src="some-icon" alt="Item 1"> -->
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
                                     </figure>
                                     <p><span>Some sample text about sample topic.</span> ▷</p>
                                 </a></li>
                                 <li><a href="/Misc/coming-soon.html">
                                     <figure class="media-container">
-                                        <!-- <img src="some-icon" alt="Item 1"> -->
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
                                     </figure>
                                     <p><span>Some sample text about sample topic.</span> ▷</p>
                                 </a></li>
                             </ul>
 
-                            <button class="get-started">▶ <span>Try It Out</span></button>
+                            <a href="/Pages/sign-in/Sing-In.html">
+                                <button class="get-started">▶ <span>Try It Out</span></button>
+                            </a>
                         </div>
                         
                         <div class="support-img">
                             <figure class="media-container">
-                                <!-- <img src="/Images/image 01.png" alt="Image 1"> -->
                                 <img src="/Images/busness.png" alt="Image 1">
                             </figure>
                         </div>
@@ -249,7 +250,9 @@
                                 </a></li>
                             </ul>
 
-                            <button class="get-started">▶ <span>Try It Out</span></button>
+                            <a href="/Pages/sign-in/Sing-In.html">
+                                <button class="get-started">▶ <span>Try It Out</span></button>
+                            </a>
                         </div>
                     </section>
                 </div>
@@ -387,7 +390,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, maiores. Consectetur temporibus ipsum doloremque, odit, ratione, similique natus dolorum molestias blanditiis tenetur dolor.</p>
                     </section>
                     
-                    <button class="get-started">▶ <span>Try It Out</span></button>
+                    <a href="/Pages/sign-in/Sing-In.html">
+                        <button class="get-started">▶ <span>Try It Out</span></button>
+                    </a>
                     
                     <br>    
                 </div>
@@ -395,7 +400,6 @@
             </div>
         </main>
     <!-- #endregion -->
-
 
 
     <!-- #region FOOTER -->
@@ -462,13 +466,6 @@
                             <li><a href="index.html">French</a></li>
                             <li><a href="index.html">Arabic</a></li>
                             <li><a href="index.html">Manderin</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
-                            <li><a href="index.html">English</a></li>
                         </ul>
                     </div>
 

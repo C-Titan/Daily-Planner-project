@@ -2,7 +2,7 @@
 /* FOOTER */
 
 footer {
-	background: var(--color-footer-bg);
+	background: #ffffff;
 	padding: var(--edge-gap-max);
 	margin: 0rem;
 	
@@ -18,28 +18,26 @@ footer {
 }
   
 
+.link-list p {
+	font-weight: bold;
+}
+.link-list ul {
+	font-size: var(--font-size-mcro);
+	min-width: 15em;
+}
+.link-list ul a {
+	color: var(--color-links-grey);
+}
+
   
 #links-container, #logo-container {
 	display: flex; 
 	justify-content: space-between;
-	gap: 5%;
-	margin-right: 5%;
-	min-width: fit-content;
 }
-
-	.link-list p {
-		font-weight: bold;
-	}
-	.link-list ul {
-		font-size: var(--font-size-mcro);
-		width: fit-content;
-	}
-	.link-list ul a {
-		color: var(--color-links-grey);
-	}
 
 #lang-copywrite { 
 	align-items: center;
+	gap: 1rem;
 	display: flex;
 }
 

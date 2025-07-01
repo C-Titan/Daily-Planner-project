@@ -1,6 +1,28 @@
 
 /* GLOBAL STYLES */
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1000px) {
+} 
+
+
 :root {
 	/* Fonts */
 		--font-family: sans-serif;
@@ -21,20 +43,17 @@
 		--border-radius-max : 3em;
 		--border-radius-mega: 5em;
 
-		--edge-gap-mcro: 0.5rem;
-		--edge-gap-min : 1rem;
-		--edge-gap     : 3rem;
-		--edge-gap-max : 5rem;
-		--edge-gap-mega: 7rem;
+		--edge-gap-mcro: 0.25%;
+		--edge-gap-min : 0.5%;
+		--edge-gap     : 1%;
+		--edge-gap-max : 3%;
+		--edge-gap-mega: 5%;
 
 		--z-index-header : 200;
 		--z-index-main   : 100;
 		--z-index-footer : 900;
 		--z-index-overlay: 1000;
 
-	/* SCREEN SIZES */
-		/*  */
-	
 	/* VFX */
 		--box-shadow        : 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 		--box-shadow-card   : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -1,7 +1,7 @@
 
 /* ========= Header ========= */
 	header {
-		background: var(--color-header-bg);
+		background: #000000;
 
 		padding       : var(--edge-gap-max);
 		padding-top   : var(--edge-gap-mcro);
@@ -13,35 +13,17 @@
 	}
 
 /* ========= Navigation ========= */
-	.logo {
-		aspect-ratio: 5 / 2;
-	}
-
-	.logo .media-container {
-		width: 10rem;
-	}
-
-	@media (width >= 900px) {
-		.nav-buttons { 
-			color: var(--color-button-bg);
-			display: flex;
-		}
-	}
-
-	@media (width < 900px) {
-		.nav-buttons {
-			display: none;
-		}
-
-
-	}
-
 	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center; 
 	}
 		
-	.auth-buttons {
-		display: flex;
+	.nav-buttons { 
+		color: #000000;
+		display: flex; 
+	}
+		
+	.auth-buttons button { 
+		margin-left: 0.5rem; 
 	}
